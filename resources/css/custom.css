@@ -1,0 +1,152 @@
+.step .notes {
+	display: none;
+}
+
+.red {
+	color: #cc3333;
+}
+
+.green {
+	color: #7ca6a6 !important;
+}
+
+.lightgreen {
+	color: #c9d8d8 !important;
+}
+
+.pale {
+  opacity:0.6;
+}
+
+
+/* Kopfbereich */
+header, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 60px;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.step header {
+    background:url(../img/minerva.png) no-repeat left top;
+    background-size: 60px;
+    height:65px;
+    opacity:0.75;
+    border-bottom:2px solid #7ca6a6;
+    margin-bottom: 20px;
+}
+
+.step header .pale { /* Da der header schon auf 0.75 abgeblasst ist, muss bei blassen images im header die opacity etwas weniger stark sein */
+ 	opacity:0.4;
+}
+
+.step header h1 {
+	margin: 0 0 0 75px;
+	font-size:  50px;
+	font-variant: small-caps;
+	letter-spacing: 0.1em;
+	color: #666666;
+	float: left;
+}
+
+.step header h2 {
+	margin: 0 0 0 0;
+	font-size:  50px;
+	font-weight: normal;
+	font-variant: normal;
+	font-variant: small-caps;
+	letter-spacing: 0.1em;
+	text-transform: none;
+/*	font-weight: 100; */
+/*	letter-spacing: 0; */
+	color: #666666;
+	float: right;
+}
+
+/* Maximalgroesse von zus. Grafiken im header-Bereich nicht groesser als die Hintergrundgrafik */
+
+.step header img {
+    width:auto;
+    max-height:74px;
+    float:right;
+}
+
+/* Linie vor dem Text auf einer Folie */
+/*
+header:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height:1px;
+    border-bottom:2px solid #7ca6a6;
+    box-shadow:0 2px 6px rgba(0, 0, 0, .1);
+    margin:60px 0 10px 0;
+    font-size:0.01em;
+}
+*/
+/* Fussbereich immer am Ende einer Folie positionieren */
+
+.step footer {
+  position:absolute;
+  bottom:20px;
+  left:50px;
+  z-index:9999;
+  font-size:18px;
+  line-height:1.5;
+}
+
+/* Fest verankerter Text ausserhalb der Praesentation */
+
+body>header, body>footer {
+  position:fixed;
+  left:1em;
+  pointer-events: auto;
+}
+
+body>header a, body>footer a {
+  font-size:82%;
+  background-color:inherit;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+body>header {
+  top:1em;
+}
+
+body>footer {
+  bottom:1em;
+}
+
+body>header img, body>footer img {
+  vertical-align:top;
+  margin-right:5px;
+}
+
+h2 {
+	color: #666666;
+	font-weight: bold;
+}
+
+img {
+    max-width: none;
+    width: auto;
+}
+
+/* Die Uebersichts-Folie ausblenden fuer nicht HTML5-faehige Browser */
+
+#overview {
+  display: none;
+}
+
+/* Auf der Uebersichtsfolie alle Folien anzeigen */
+
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.invisible {
+  visibility: hidden;
+}

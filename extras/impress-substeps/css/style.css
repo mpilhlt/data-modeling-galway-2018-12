@@ -1,0 +1,148 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    min-height: 740px;
+    -webkit-font-smoothing: antialiased;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+
+
+
+b, strong { font-weight: bold }
+i, em { font-style: italic}
+
+
+/* enable clicking on elements 'hiding' behind body in 3D */
+body     { pointer-events: auto;  }
+#impress { pointer-events: auto; }
+
+/* COMMON STEP STYLES */
+
+.step {
+    width: 900px;
+    padding: 40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+    font-size: 48px;
+    background-color: #fefefe
+    line-height: 1.5;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+#sticky #controls {
+  text-align: center;
+  width: 220px;
+  position: absolute;
+  left: 49%;
+  z-index: 99950;
+  margin: 0 0 0 -100px;
+  top: 8px;
+}
+
+
+
+
+.slide {
+  display: block;
+  width: 900px;
+  height: 700px;
+  border-radius: 24px;
+  background-color: rgba(255,255,255,0.9);
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: rgb(102, 102, 102);
+}
+
+
+
+.arrows {
+  color: #fdbb30;
+  width: 84px;
+  height: 22px;
+  margin: 2px 0 0 0px;
+  font-size: 22px;
+  line-height: 13px;
+  margin-right: 20px;
+  font-size: 1em;
+  position: relative;
+ z-index: 999999;
+}
+
+.arrows:hover { 
+color: #eeeeee;
+  -webkit-transition: all 0.25s linear;  
+     -moz-transition: all 0.25s linear;  
+      -ms-transition: all 0.25s linear;  
+       -o-transition: all 0.25s linear;  
+          transition: all 0.25s linear;
+}
+
+
+
+
+.step {
+margin: 0;
+opacity: 0.3;
+
+-webkit-transition: opacity 1s;
+-moz-transition:    opacity 1s;
+-ms-transition:     opacity 1s;
+-o-transition:      opacity 1s;
+transition:         opacity 1s;
+}
+
+ .step.active { opacity: 1 }
+
+p {
+  padding: 0.5em 0;
+}
+ 

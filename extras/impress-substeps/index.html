@@ -1,0 +1,90 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=1024" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <title>Impress.js Substeps</title>  
+      <link href="css/style.css" rel="stylesheet">
+   <link href="css/substeps.css" rel="stylesheet"> 
+         
+</head>
+
+<body>
+ <div id="sticky">
+  <div id="controls">
+    <a href="#"  class="arrows" onClick="substepPrev();"> prev</a>
+    <a href="#"  clsss="arrows" onClick="substepNext();"> next</a>
+  </div>
+ </div>
+ <div id="impress">
+
+    <div class="step slide" data-x="1000">
+        <q>Slide In Part 1</q>
+        <p class="substep fadeIn" data-duration="1000"> Substep fadeIn </p>
+        <p class="substep fadeInRight" data-duration="2000"> Substep fadeInRight</p>
+        <p class="substep fadeInLeft" data-duration="3000"> Substep  fadeInLeft</p>
+        <p class="substep rollIn" data-duration="4000"> Substep rollIn </p>
+        <p class="substep flipInX" data-duration="5000"> Substep flipInX </p>
+        <p class="substep flipInY" data-duration="1000"> Substep flipInY</p> 
+         
+        
+    </div>
+
+
+
+    <div class="step slide" data-x="2000">
+        <q>Slide In Part 2</q>
+         
+        <p class="substep bounceIn"> Substep bounceIn</p>
+        <p class="substep bounceInUp"> Substep bounceInUp</p>
+        <p class="substep bounceInDown"> Substep bounceInDown</p>
+        <p class="substep bounceInRight"> Substep bounceInRight</p>
+        <p class="substep bounceInLeft"> Substep bounceInLeft</p> 
+        <p class="substep lightSpeedIn"> Substep lightSpeedIn</p>         
+       
+    </div>
+
+    <div  class="step slide" data-x="3000">
+         <q>Slide Out Part 1</q>
+         <p class="substep fadeOut"> Substep fadeOut </p>
+        <p class="substep fadeOutRight"> Substep fadeOutRight</p>
+        <p class="substep fadeOutLeft"> Substep  fadeOutLeft</p>
+        <p class="substep rollOut"> Substep rollOut</p>
+        <p class="substep flipOutX"> Substep flipOutX </p>
+        <p class="substep flipOutY"> Substep flipOutY</p> 
+      
+    </div>
+
+   <div  class="step slide" data-x="4000">
+         <q>Slide Out Part 2</q>
+        <p class="substep bounceOut"> Substep bounceOut</p>
+        <p class="substep bounceOutUp"> Substep bounceOutUp</p>
+        <p class="substep bounceOutDown"> Substep bounceOutDown</p>
+        <p class="substep bounceOutRight"> Substep bounceOutRight</p>
+        <p class="substep bounceOutLeft"> Substep bounceOutLeft</p> 
+        <p class="substep lightSpeedOut"> Substep lightSpeedOut</p> 
+    </div>
+
+    <div  class="step slide" data-x="5000">
+        <q>slide 5</q>
+    </div>  
+ 
+  </div>
+        
+        
+        <script src="js/substeps2.js"></script> 
+        <script src="js/automatedpresentation.js"></script>
+        <script src="js/impress.js"></script>
+        <script>  impress().init();</script>
+        <script>
+        var api = impress();
+        </script>
+      
+
+
+</body>
+</html>
+
